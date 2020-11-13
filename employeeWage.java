@@ -28,10 +28,20 @@ public static final int MAX_HOURS_IN_MONTH = 160;
 
 
 	public static void main(String[] args) {
-		// TODO Auto-generated method stub
+
 int totalEmpHrs = 0, totalEmpWage = 0, totalWorkingDays = 0;
 while (totalEmpHrs <= MAX_HOURS_IN_MONTH && 
 		totalWorkingDays < NUM_OF_WORKING_DAYS) {
 	int empHrs = 0;
 	totalWorkingDays++;
 	int empCheck = (int) Math.floor(Math.random() * 10) % 3;
+	switch (empCheck) {
+		case IS_FULL_TIME:
+			empHrs = 8;
+			break;
+		case IS_PART_TIME:
+			empHrs =4;
+			break;
+			default:
+				empHrs = 0;
+	}
