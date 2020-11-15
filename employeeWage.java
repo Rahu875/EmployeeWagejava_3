@@ -48,3 +48,8 @@ while (totalEmpHrs <= MAX_HOURS_IN_MONTH &&
 	totalEmpHrs += empHrs;
 	int empWage = empHrs * EMP_RATE_PER_HOUR;
 	totalEmpWage += empWage;
+	System.out.println(" Day#: " + totalWorkingDays + "Emp Hr: " + empHrs );
+}
+	System.out.println(" Total Emp Wage: " + totalEmpWage );
+	}
+}
