@@ -51,3 +51,14 @@ public class EmpWageBuilder implements ComputeEmpWage {
 	companyToEmpWageMap.put(company, companyEmpWage);
 }
 	
+public void ComputeEmpWage() {
+	for (int i=0; i < companyEmpWageList.size(); i++) {
+		CompanyEmpWage companyEmpWage = companyEmpWageList.get(i);
+		companyEmpWage.setTotalEmpWage(this.computeEmpWage(companyEmpWage));
+		System.out.println(companyEmpWage);
+	}
+}
+public int getTotalWage(String company) {
+	return companyToEmpWageMap.get(company).totalEmpWage;
+	
+}
