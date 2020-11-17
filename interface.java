@@ -62,3 +62,13 @@ public int getTotalWage(String company) {
 	return companyToEmpWageMap.get(company).totalEmpWage;
 	
 }
+public int computeEmpWage(CompanyEmpWage) {...}
+public static void main(String[] args) {
+	ComputeEmpWage empWageBuilder = new EmpWageBuilder();
+	empWageBuilder.addCompanyEmpWage(company: "Flipcart", empRatePerHour: 20, numOfWorkingDays: 2, maxHoursPerMonth: 10);
+	empWageBuilder.addCompanyEmpWage(company: "Relaince", empRatePerHour: 10, numOfWorkingDays: 4, maxHoursPerMonth: 20);
+	empWageBuilder.computeEmpWage1();
+	System.out.println("Total Wage for Flipcart Company: "+empWageBuilder.getTotalWage(company:"Flipcart"));
+	}
+}
+}
